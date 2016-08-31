@@ -3,9 +3,10 @@
     <head>
         <title>Bplaces</title>
         <%= csrf_meta_tags %>
-
         <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
         <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAl5_O0K4kVG_RMKDCZQ744fBfkFpLf6b8&callback=initMap" type="text/javascript">
+        </script>
     </head>
 
     <body>
@@ -22,6 +23,6 @@
         <div class="container">
             <%= yield %>
         </div>
-        
+
     </body>
 </html>
